@@ -1,0 +1,111 @@
+body {
+    background-color: #F5F5DC; 
+}
+
+h1, 
+h2 {
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1)
+}
+
+h1 {
+    background: rgb(181, 193, 218);
+    color: white;
+    padding: 15px 0;
+    border-radius: 20px;
+    margin: 0;
+}
+
+h2 {
+    background: rgb(255, 244, 182);
+    font-family:'Segoe UI', Tahoma, Verdana, sans-serif; 
+    padding: 10px 10px;
+    border-radius: 15px;
+    vertical-align: top;
+    color: #5c5b4e;
+}
+
+li {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    color: #53532f;
+}
+
+p {
+    font-family: Arial;
+    font-size: 13px;
+    color: #4e4e47;
+}
+
+.section-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.interest-hobbies, 
+.my-works {
+    background-color: #f3f3f3;
+    padding: 20px;
+    width: calc(50% - 30px);
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+}
+
+.testimonials, 
+.gallery, 
+.my-goals {
+    background-color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+}
+
+.section-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 15px;
+}
+
+.section-gallery img {
+    max-width: 80%; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(2, 2, 2, 0.1); 
+}
+
+.comments {
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+
+.message-container {
+    display: flex;
+    justify-content: center;
+}
+
+.message {
+    display: flex;
+    text-align: left;
+    margin-left: 40px;
+    font-family: Arial;
+    color: #4e4e47;
+    padding: 10px;
+    background-color: #d6deff;
+    padding: 20px;
+    width: calc(30% - 30px);
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+}
+
+.button {
+    margin-left: 135px;
+    font-family: Arial;
+    color: #4e4e47;
+    padding: 10px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KPOP Band CRUD</title>
+    <link href="exercise_18.css" rel="stylesheet"/>
+</head>
+    <body>
+        <form id="kpop-form">
+            <input type="hidden" id="id">
+            <div>
+                <label for="kpop">KPOP Band:</label>
+                <input type="text" id="kpop" required>
+            </div>
+            <div>
+                <label for="members">Number of members:</label>
+                <input type="number" id="members" required>
+            </div>
+            <div>
+                <label for="agency">KPOP Agency:</label>
+                <input type="text" id="agency" required>
+            </div>
+            <div>
+                <label for="fandom">KPOP Fandom name:</label>
+                <input type="text" id="fandom" required>
+            </div>
+            <div>
+                <label for="bias">Bias member:</label>
+                <input type="text" id="bias" required>
+            </div>
+            <button type="reset">
+                Reset
+            </button>
+            <button type="button" onclick="submitData()">
+                Submit
+            </button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>KPOP</th>
+                    <th>Members</th>
+                    <th>Agency</th>
+                    <th>Fandom</th>
+                    <th>Bias</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="kpop_list"></tbody>
+        </table>
+
+        <script src="exercise_18.js"></script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+body {
+    background-color: #F5F5DC; 
+}
+
+img {
+    max-width: 25%;
+    min-width: 300px;
+    border: 1px solid rgb(90, 84, 84);
+}
+
+p {
+    font-family:Verdana, Tahoma, sans-serif;
+    color: #4e4e47;
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Intia, Joanna Marie Page</title>
+		<link href="styles.css" rel="stylesheet" />
+	</head>
+		<body>
+			<div>
+				<h1>Intia, Joanna Marie D.</h1>
+			</div>
+
+			<div class="section-container">	
+				<div class="interest-hobbies">
+					<h2>My interest and hobbies:</h2>
+						<ul>
+							<li>Watching Korean Drama and Chinese Drama</li>
+								<p>Finding cultural connection and emotional
+									resonance while immersing myself in 
+									the stories and characters
+								    of Korean and Chinese dramas.</p>
+							<li>Editing videos</li>
+								<p>Exploring my creativity
+									and storytelling skills as I refine 
+									and enhance video content.</p>
+							<li>Painting</li>
+								<p>It allows me to express my inner
+									self on canvas.</p>
+							<li>Making Journal</li>
+								<p>Keeping a personal record of thoughts,
+									experiences, and reflections
+									in a journal or diary.</p>
+							<li>Dancing</li>
+								<p> Using the power of movement and music
+									to express my emotions, release stress, 
+									and feel a deeper connection
+									to my body and inner rhythm.</p>
+						</ul>
+				</div>
+
+				<div class="my-works">
+					<h2>My Works:</h2>
+						<ol>
+							<li><a href="exercise_16.html">
+								Coutries of the World</a></li>
+							<li><a href="exercise_18.html">
+								KPOP Band</a></li>
+						</ol>
+				</div>
+			</div>
+
+			<div class="testimonials">
+				<h2>Testimonials</h2>
+					<p>Chan: Nice!</p>
+					<p>Pearl: Huwaw aesthetic!</p>
+					<p>Nel: galing mo!</p>
+					<p>Lay: angas ng website mo</p>
+			</div>
+		
+			<div class="gallery">
+				<h2>Gallery</h2>
+					<div class="section-gallery">
+						<img src="joimage.jpg">
+						<img src="joimage.jpg">
+						<img src="joimage.jpg">
+						<img src="joimage.jpg">
+						<img src="joimage.jpg">
+						<img src="joimage.jpg">
+					</div>
+			</div>
+
+			<div class="my-goals">
+				<h2>My Goals</h2>
+					<p>To have a bachelor</p>
+					<p>Be a Web designer</p>
+					<p>To travel global</p>
+					<p>Make a lot of money</p>
+					<p>Have a stable work</p>
+					<p>Be free and happy in future</p>
+				
+				<div class="comments">
+						<p>Nel: Keep it up</p>
+						<p>Lay: Kumusta na solve mo ba conflict?</p>
+						<p>Pearl: Ang aesthetic ng web page mo</p>
+						<p>Chan: how are you?</p>
+				</div>
+			</div>
+
+			<div class="message-container">
+				<div class="message">
+					<form action="">
+						<div>
+							<label for="name">Name: </label>
+							<input type="text" 
+							  id="name" 
+							  oninput="onTextChange()" 
+							  placeholder="Your Name">
+						</div>
+						
+						<div>
+							<label for="message">Comment: </label>
+							<textarea name="message" 
+							  id="message" 
+							  cols="30" 
+							  rows="7" 
+							  placeholder="Message" 
+							  oninput="onTextChange()">
+							</textarea>
+						</div>
+
+						<div class="button">
+							<button type="button" 
+							  id="comment_button" 
+							  disabled="true" 
+							  onclick="addComment();">
+							  	Comment
+							</button>
+						</div>
+
+						<div class="button">
+							<button type="button" 
+								onclick="sortComments('asc');">
+									Ascending
+							</button>
+							<button type="button" 
+								onclick="sortComments('desc');">
+									Descending
+							</button>
+						</div>
+					</form>
+				</div>
+				<div class="comments"></div>
+			</div>
+		<script src="script.js"></script>
+	</body>
+</html>
