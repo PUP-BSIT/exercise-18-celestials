@@ -23,7 +23,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $coach = $data->coach;
     $country = $data->country;
 
-    $sql = "INSERT INTO teams (teamName, coach, country) VALUES ('$teamName', '$coach', '$country')";
+    $sql = "INSERT INTO teams (teamName, coach, country) 
+    VALUES ('$teamName', '$coach', '$country')";
 
     if ($conn->query($sql) === TRUE) {
         echo json_encode(["message" => "Team added successfully"]);
@@ -49,7 +50,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
             ];
         }
     }
-
     echo json_encode($teams);
 }
 
@@ -64,7 +64,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'PATCH') {
     if ($conn->query($sql) === TRUE) {
         echo json_encode(["message" => "Team wins updated successfully"]);
     } else {
-        echo json_encode(["error" => "Error updating team wins: " . $conn->error]);
+        echo json_encode(["error" => "Error updating team wins: " 
+        . $conn->error]);
     }
 }
 
@@ -79,7 +80,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
         echo json_encode(["error" => "Error deleting team: " . $conn->error]);
     }
 }
-
 $conn->close();
 
 ?>

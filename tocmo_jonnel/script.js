@@ -99,8 +99,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 <p>Coach: ${team.coach}</p>
                 <p>Country: ${team.country}</p>
                 <p>Wins: ${team.wins}</p>
-                <button class="update-button" data-team-id="${team.id}">Update Wins</button>
-                <button class="delete-button" data-team-id="${team.id}">Delete</button>
+                <button class="update-button" data-team-id="${team.id}">
+                Update Wins
+                </button>
+                <button class="delete-button" data-team-id="${team.id}">
+                Delete
+                </button>
             `;
             teamsContainer.appendChild(teamCard);
         });
@@ -125,7 +129,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateTeam(teamId, newWins) {
-        fetch(`https://thefusionseller.online/restapi/tocmo_backend.php?id=${teamId}`, {
+        fetch(`https://thefusionseller.online/restapi/tocmo_backend.php?id=
+        ${teamId}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded',
@@ -143,7 +148,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }    
 
     function deleteTeam(teamId) {
-        fetch(`https://thefusionseller.online/restapi/tocmo_backend.php?id=${teamId}`, {
+        fetch(`https://thefusionseller.online/restapi/tocmo_backend.php?id=
+        ${teamId}`, {
             method: 'DELETE',
         })
         .then(response => {
@@ -155,8 +161,5 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Error deleting team:', error));
     }
-
     fetchTeams();
 });
-
-
