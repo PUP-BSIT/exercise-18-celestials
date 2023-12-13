@@ -1,3 +1,5 @@
+const myRestApi = 'https://thefusionseller.online/restapi/intia_backend.php';
+
 refresh();
 function submitData() {
     const id = document.querySelector("#id").value;
@@ -23,7 +25,7 @@ function create() {
     formData.append("fandom", fandom);
     formData.append("bias", bias);
     
-    fetch("./combined.php", {
+    fetch(myRestApi, {
         method: "POST",
         body: formData,
     })
@@ -43,7 +45,7 @@ function refresh() {
         
     const headerRow = table.insertRow(0);
     headerRow.innerHTML = "";
-    fetch("./combined.php")
+    fetch(myRestApi)
         .then((response) => response.json())
         .then((kpopList) => {
             for (const kpop_band of kpopList) {
@@ -96,7 +98,7 @@ function edit(id) {
     const fandom = document.querySelector("#fandom").value;
     const bias = document.querySelector("#bias").value;
     
-    fetch(`./combined.php`, {
+    fetch(`./intia_backend.php`, {
         method: "PATCH",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",
@@ -111,7 +113,7 @@ function edit(id) {
 }
 
 function deleteUser(id) {
-    fetch("./combined.php", {
+    fetch(myRestApi, {
         method: "DELETE",
         headers: {
             'Content-Type': 'application/json',

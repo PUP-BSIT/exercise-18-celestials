@@ -1,9 +1,14 @@
 <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $db = "exercise18";
-    $conn = mysqli_connect($servername, $username, $password, $db);
+    header('Access-Control-Allow-Origin: *');
+    header("Access-Control-Allow-Methods: GET, POST, PATCH, PUT, DELETE");
+    header("Access-Control-Allow-Headers: Origin, Content-Type, X-Auth-Token");
+
+    $host = "127.0.0.1:3306";
+    $username = "u220855403_celestials";
+    $password = "C3lestials!";
+    $database = "u220855403_ex_18";
+
+    $conn = new mysqli($host, $username, $password, $database);
 
     if (!$conn) {
         die("Connection failed: " . mysqli_connect_error());
