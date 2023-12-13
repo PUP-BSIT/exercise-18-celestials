@@ -1,0 +1,69 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+  margin: 32px; 
+}
+
+h1 {
+  font-size: 40px; 
+  text-align: center;
+  margin-bottom: 16px;
+  background-color: lightskyblue;
+  border: 3px solid #000;
+  padding: 16px;
+}
+
+h2 {
+  font-size: 32px; 
+  margin: 32px 0;
+  text-align: center;
+  background-color: lightsteelblue;
+  border: 1px solid #000;
+  padding: 16px;
+}
+
+li {
+  font-size: 24px; 
+  margin-bottom: 24px;
+  margin-left: 80px; 
+}
+
+p {
+  font-size: 20px; 
+  margin-left: 80px; 
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.fit-picture {
+  width: 150px;
+  margin: 32px 0;
+}
+
+.message-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+#name, 
+#message {
+  width: 500px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#comment_button {
+  width: 200px;
+}
+
+.comment-button {
+  margin-top: 10px;
+}
