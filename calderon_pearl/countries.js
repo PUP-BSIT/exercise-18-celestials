@@ -2,13 +2,11 @@ let searchButton = document.querySelector('#search_button');
 
 searchButton.addEventListener('click', function() {
     let inputCountry = document.querySelector('#input_country').value;
-    let apiURL = `https://restcountries.com/v3.1/name/${inputCountry}?
-        fullText=true`;
+    let apiURL = `https://restcountries.com/v3.1/name/${inputCountry}?fullText=true`;
 
     fetch(apiURL)
         .then((response) => response.json())
         .then((data) => {
-            console.log(data[0]);
             displayDetailsInTable(data[0]);
             displayCountriesInSameRegion(data[0].region);
         });
