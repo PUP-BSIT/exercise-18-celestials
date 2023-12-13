@@ -2,7 +2,8 @@ let searchButton = document.querySelector('#search_button');
 
 searchButton.addEventListener('click', function() {
     let inputCountry = document.querySelector('#input_country').value;
-    let apiURL = `https://restcountries.com/v3.1/name/${inputCountry}?fullText=true`;
+    let apiURL = 
+        `https://restcountries.com/v3.1/name/${inputCountry}?fullText=true`;
 
     fetch(apiURL)
         .then((response) => response.json())
@@ -21,7 +22,7 @@ function displayDetailsInTable(countryData) {
         { label: 'Flag', value: `<img src="${countryData.flags.svg}">` },
         { label: 'Capital', value: countryData.capital[0] },
         { label: 'Region', value: countryData.region },
-        { label: 'Currency', value: `${Object.keys(countryData.currencies)[0]}  
+        { label: 'Currency', value: `${Object.keys(countryData.currencies)[0]}
             - ${countryData.currencies[Object.keys
             (countryData.currencies)[0]].name}`}
     ];
