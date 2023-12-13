@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Characters</title>
+    <link rel="stylesheet" href="crud_anime.css">
+</head>
+<body>
+<div class="addAnime">
+    <div class="form-container">
+        <h2 class="wew">Add Anime Character</h2>
+        <form id="addCharacterForm" class="AddForm">
+            <input type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Enter Name" 
+                required>
+            <input type="text" 
+                id="anime_show" 
+                name="anime_show" 
+                placeholder="Enter Show" 
+                required>
+            <input type="text" 
+                id="genre" 
+                name="genre" 
+                placeholder="Enter Genre" 
+                required>
+            <input type="text" 
+                id="japanese_voice_actor" 
+                name="japanese_voice_actor" 
+                placeholder="Enter Japanese Voice Actor" 
+                required>
+            <input type="text" 
+                id="life_status" 
+                name="life_status" 
+                placeholder="Life Status" 
+                required>
+            <button type="submit">Add Character</button>
+        </form>  
+    </div>
+</div>
+<div class="charList">
+    <div class="characters">
+        <div class="list">
+            <h1>Anime Characters</h1>
+            <div class="table-container">
+                <table id="characterTable"></table>
+            </div>
+        </div>
+    </div>
+</div>
+  <script src="crud_anime.js"></script>
+</body>
+</html>
