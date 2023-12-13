@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 18</title>
+    <link rel="stylesheet" href="exercise_18_crud.css">
+</head>
+<body>
+    
+    <div class="form-container">
+        <form>
+            <label>Title</label><br>
+            <input type="text" id="book_title">
+            <label>Author</label>
+            <input type="text" id="book_author">
+            <label>Genre</label>
+            <input type="text" id="book_genre">
+            <label>Publication Year</label>
+            <input type="text" id="book_year">
+            <label>Synopsis</label>
+            <input type="text" id="book_synopsis">
+            <button type="submit" onclick="addBook()">Submit</button>
+            <button type="button" onclick="displayBook()">
+                Display Books
+            </button>
+        </form>
+    </div>
+
+    <div class="table-container">
+        <table id="book_list">
+        </table>
+    </div>
+    
+    <script src="exercise_18_crud.js"></script>
+</body>
+</html>
